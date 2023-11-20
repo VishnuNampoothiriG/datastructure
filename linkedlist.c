@@ -109,7 +109,7 @@ void deletepos()
 {
 	struct node *nextnode,*temp;
 	int pos=0;
-	int i=2;
+	int i=1;
 	printf("enter the position:");
 	scanf("%d",&pos);
 	temp=head;
@@ -161,6 +161,7 @@ void search()
 		if(temp->data==key)
 		{
 			printf("%d found at position %d",key,pos+1);
+			break;
 		}
 	temp=temp->next;
 	pos++;
@@ -170,6 +171,10 @@ void search()
 		if(key==temp->data)
 		{
 			printf("%d found at position %d",key,pos+1);
+		}
+		else
+		{
+			printf("value not found");
 		}
 	}
 }	
