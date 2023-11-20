@@ -171,6 +171,7 @@ void search()
 		if(temp->data==key)
 		{
 			printf("%d found at position %d",key,pos+1);
+			break;
 		}
 	temp=temp->next;
 	pos++;
@@ -180,6 +181,10 @@ void search()
 		if(key==temp->data)
 		{
 			printf("%d found at position %d",key,pos+1);
+		}
+		else
+		{
+			printf("value not found");
 		}
 	}
 }	
